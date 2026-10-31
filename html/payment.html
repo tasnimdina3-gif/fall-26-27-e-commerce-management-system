@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+
+<body>
+    <div class="paymentSelectionBox">
+        <h2>Select a payment method</h2>
+        <label class="paymentOption" for="visa">
+            <input type="radio" id="visa" name="payment" value="visa">
+            <img src="../image/visa.png" alt="visa image" width="100" height="100">
+            <span>Visa</span>
+        </label>
+
+        <label class="paymentOption" for="mastercard">
+            <input type="radio" id="mastercard" name="payment" value="mastercard">
+            <img src="../image/mastercard.png" alt="mastercard image" width="100" height="100">
+            <span>Mastercard</span>
+        </label>
+
+        <label class="paymentOption" for="Bkash">
+            <input type="radio" id="Bkash" name="payment" value="Bkash">
+            <img src="../image/bkash.png" alt="Bkash image" width="100" height="100">
+            <span>Bkash</span>
+        </label>
+
+        <label class="paymentOption" for="Nagad">
+            <input type="radio" id="Nagad" name="payment" value="Nagad">
+            <img src="../image/nagad.png" alt="Nagad image" width="100" height="100">
+            <span>Nagad</span>
+        </label>
+    </div>
+
+    <div id="selectedPaymentMethod">
+        <div id="visaForm">
+            <form method="POST">
+                <fieldset>
+                    <legend>Visa Card Payment</legend>
+                    <table>
+                        <tr>
+                            <td><label for="visaCardName">Cardholder Name : </label></td>
+                            <td><input type="text" id="visaCardName" name="visaCardName" placeholder="Enter name here"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="visaCardNumber">Card Number : </label></td>
+                            <td><input type="text" id="visaCardNumber" name="visaCardNumber"
+                                    placeholder="Enter card number here" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="VexpiryDate">Expiry Date : </label></td>
+                            <td><input type="month" id="VexpiryDate" name="VexpiryDate" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Vcvv">CVV : </label></td>
+                            <td><input type="password" id="Vcvv" name="cvv" placeholder="123" maxlength="4" required>
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="submit" id="btnPayVisa" name="visaPaymentButton">Pay Now</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="mastercardForm">
+            <form method="POST">
+                <fieldset>
+                    <legend>Mastercard Payment</legend>
+                    <table>
+                        <tr>
+                            <td><label for="McardName">Cardholder Name : </label></td>
+                            <td><input type="text" id="MCardName" name="McardName" placeholder="Enter name here"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="McardNumber">Card Number : </label></td>
+                            <td><input type="text" id="McardNumber" name="McardNumber"
+                                    placeholder="Enter card number here" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="MexpiryDate">Expiry Date : </label></td>
+                            <td><input type="month" id="MexpiryDate" name="MexpiryDate" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Mcvv">CVV : </label></td>
+                            <td><input type="password" id="Mcvv" name="Mcvv" placeholder="123" maxlength="4" required>
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="submit" id="btnPayMastercard" name="mastercardPaymentButton">Pay Now</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="BkashForm">
+            <form method="POST">
+                <fieldset>
+                    <legend>Bkash Payment</legend>
+                    <table>
+                        <tr>
+                            <td><label for="BphNumber">Phone Number : </label></td>
+                            <td><input type="text" id="BphNumber" name="BKASHphNumber"
+                                    placeholder="Enter phone number here" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1"></td>
+                            <td><button name="sendOTP">Send OTP</button></td>
+                        </tr>
+                        <div id="bkashOTPcodeBox">
+                            <tr>
+                                <td><label type="button" for="bkashOTP">OTP Code : </label></td>
+                                <td colspan="1"><input type="text" name="bkashOTP" placeholder="Enter OTP here"
+                                        required></td>
+                            </tr>
+                        </div>
+                        <div id="bkashPass">
+                            <tr>
+                                <td><label for="bkashPass">Password : </label></td>
+                                <td colspan="1"><input type="password" id="bkashPass" name="bkashPass"
+                                        placeholder="Enter password here" maxlength="5" required>
+                                </td>
+                            </tr>
+                        </div>
+                    </table>
+                    <button type="submit" id="btnPayBkash" name="BkashPaymentButton">Pay Now</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="NagadForm">
+            <form method="POST">
+                <fieldset>
+                    <legend>Nagad Payment</legend>
+                    <table>
+                        <tr>
+                            <td><label for="NphNumber">Phone Number : </label></td>
+                            <td><input type="text" id="NphNumber" name="NAGADphNumber"
+                                    placeholder="Enter phone number here" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1"></td>
+                            <td><button type="button" name="sendOTP">Send OTP</button></td>
+                        </tr>
+                        <div id="nagadOTPcodeBox">
+                            <tr>
+                                <td><label for="nagadOTP">OTP Code : </label></td>
+                                <td colspan="1"><input type="text" id="nagadOTP" name="nagadhOTP"
+                                        placeholder="Enter OTP here" required></td>
+                            </tr>
+                        </div>
+                        <div id="nagadPass">
+                            <tr>
+                                <td><label for="nagadPass">Password : </label></td>
+                                <td colspan="1"><input type="password" id="nagadPass" name="nagadPass"
+                                        placeholder="Enter password here" maxlength="5" required>
+                                </td>
+                            </tr>
+                        </div>
+                    </table>
+                    <button type="submit" id="btnPayNagad" name="NagadPaymentButton">Pay Now</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
