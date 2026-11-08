@@ -4,11 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up | Phoenix Shop</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
+    <header>
+        <img src="../image/logo.jpg" alt="Phoenix Shop" width="60" height="60">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="homeAndLiving.html">Home &amp; Living</a></li>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="seller.html">Sell on Phoenix</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" class="active">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="form-box">
+        <h2>Create your account</h2>
+        <p>Fields marked * are required.</p>
+
+        <form action="login.html" method="get">
+            <fieldset>
+                <legend>Account Type</legend>
+                <input type="radio" id="customer" name="userType" value="Customer" checked>
+                <label for="customer">Customer</label>
+                <input type="radio" id="seller" name="userType" value="Seller">
+                <label for="seller">Seller</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <table>
+                    <tr>
+                        <td><label for="fullName">Full Name: *</label></td>
+                        <td><input type="text" id="fullName" name="fullName" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email: *</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone: *</label></td>
+                        <td><input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City: *</label></td>
+                        <td>
+                            <select id="city" name="city" required>
+                                <option value="">-- Select City --</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Chattogram">Chattogram</option>
+                                <option value="Sylhet">Sylhet</option>
+                                <option value="Rajshahi">Rajshahi</option>
+                                <option value="Khulna">Khulna</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address:</label></td>
+                        <td><textarea id="address" name="address" rows="3"></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Login Details</legend>
+                <table>
+                    <tr>
+                        <td><label for="password">Password: *</label></td>
+                        <td><input type="password" id="password" name="password" minlength="8" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirmPassword">Confirm Password: *</label></td>
+                        <td><input type="password" id="confirmPassword" name="confirmPassword" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <p>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a></label>
+            </p>
+
+            <input type="submit" class="btn" value="Sign Up">
+            <input type="reset" class="btn reset" value="Clear">
+        </form>
+
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </section>
+
+    <footer>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms</a> |
+            <a href="seller.html">Sell on Phoenix</a>
+        </p>
+        <p>&copy; 2026 Phoenix Shop</p>
+    </footer>
 </body>
 
 </html>

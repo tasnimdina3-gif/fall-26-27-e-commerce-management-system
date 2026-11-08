@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard | Phoenix Shop</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="../image/logo.jpg" alt="Phoenix Shop" width="60" height="60">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="homeAndLiving.html">Home &amp; Living</a></li>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="seller.html" class="active">Sell on Phoenix</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Seller Dashboard</h1>
+        <p>Welcome, <strong>everyone</strong></p>
+
+        <div class="stats">
+            <div class="stat">
+                <h2>24</h2>
+                <p>Products</p>
+            </div>
+            <div class="stat">
+                <h2>58</h2>
+                <p>Orders</p>
+            </div>
+            <div class="stat">
+                <h2>৳1,45,000</h2>
+                <p>Earnings</p>
+            </div>
+            <div class="stat">
+                <h2>4.6</h2>
+                <p>Rating</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>My Products</h2>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>P101</td>
+                    <td>SG English Willow Cricket Bat</td>
+                    <td>৳14,500</td>
+                    <td>12</td>
+                    <td class="green">Active</td>
+                </tr>
+                <tr>
+                    <td>P102</td>
+                    <td>Yonex Astrox 100ZZ Racket</td>
+                    <td>৳22,000</td>
+                    <td>5</td>
+                    <td class="green">Active</td>
+                </tr>
+                <tr>
+                    <td>P103</td>
+                    <td>Adjustable Dumbbell 24kg</td>
+                    <td>৳22,000</td>
+                    <td>0</td>
+                    <td class="red">Out of stock</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="box">
+            <h2>Add a New Product</h2>
+            <form action="seller.html" method="get">
+                <table>
+                    <tr>
+                        <td><label for="productName">Product Name:</label></td>
+                        <td><input type="text" id="productName" name="productName" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="category">Category:</label></td>
+                        <td>
+                            <select id="category" name="category" required>
+                                <option value="">-- Select Category --</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Fashion">Fashion</option>
+                                <option value="Home and Living">Home and Living</option>
+                                <option value="Beauty">Beauty</option>
+                                <option value="Sports">Sports</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="price">Price (৳):</label></td>
+                        <td><input type="number" id="price" name="price" min="1" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="stock">Stock:</label></td>
+                        <td><input type="number" id="stock" name="stock" min="0" required></td>
+                    </tr>
+                </table>
+                <input type="submit" class="btn" value="Add Product">
+                <input type="reset" class="btn reset" value="Clear">
+            </form>
+        </div>
+
+        <div class="box">
+            <h2>Recent Orders</h2>
+            <table>
+                <tr>
+                    <th>Order</th>
+                    <th>Customer</th>
+                    <th>Product</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>#5012</td>
+                    <td>Nadia Islam</td>
+                    <td>Cricket Bat</td>
+                    <td class="green">Delivered</td>
+                </tr>
+                <tr>
+                    <td>#5013</td>
+                    <td>Tanvir Ahmed</td>
+                    <td>Yonex Racket</td>
+                    <td class="red">Pending</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms</a> |
+            <a href="seller.html">Sell on Phoenix</a>
+        </p>
+        <p>&copy; 2026 Phoenix Shop</p>
+    </footer>
+</body>
+
+</html>

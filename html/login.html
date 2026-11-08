@@ -5,10 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+    <header class="header">
+        <a href="index.html" class="logo">E-CommerceShop</a>
 
+
+        <div class="user-info">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+    </header>
+
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a herf="products.html">Products</a>
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+
+
+    <div class="auth-box">
+
+        <div class="card">
+            <h2>Welcome back</h2>
+
+            <p>
+                One login for everyone.
+                We will open the right dashboard for your account.
+            </p>
+
+
+
+            <div id="loginMessage" class="message"></div>
+
+            <fieldset>
+                <legend>Your account</legend>
+
+                <table class="form-table">
+                    <tr>
+                        <td>
+                            <label for="username">Username or Email:</label>
+                        </td>
+
+                        <td>
+                            <input type="text" id="username" name="username" placeholder="rahim@gmail.com">
+
+                            <span id="usernameError"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+
+                        <td>
+                            <input type="password" id="password" placeholder="Your password">
+
+                            <span id="passwordError"></span>
+
+                            <input type="checkbox" id="showPassword">
+                            <label for="showPassword">Show password</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+
+            <input type="submit" class="btn btn-block" value="Login">
+
+
+
+            <p class="auth-switch">
+                Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Demo accounts</h3>
+
+            <p>Click "Use" to fill the form, then press Login.</p>
+
+            <table class="demo-accounts">
+                <tr>
+                    <td>Admin</td>
+                    <td>admin1234</td>
+                    <td><button type="button">Use</button></td>
+                </tr>
+
+                <tr>
+                    <td>Seller</td>
+                    <td>seller123</td>
+                    <td><button type="button">Use</button></td>
+                </tr>
+
+                <tr>
+                    <td>Customer</td>
+                    <td>customer123</td>
+                    <td><button type="button">Use</button></td>
+                </tr>
+
+                <tr>
+                    <td>Delivery Agent</td>
+                    <td>DAgent123</td>
+                    <td><button type="button">Use</button></td>
+                </tr>
+
+
+            </table>
+
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 PhonixShop. All Rights Reserved.</p>
+    </footer>
 </body>
 
 </html>
