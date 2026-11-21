@@ -4,65 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Phoenix Shop</title>
 </head>
 
 <body>
-    <header>
+    <header class="header" id="Top">
+        <img src="image/logo.jpg" alt="Phoenix Shop" width="60" height="60">
+        <h1 id="Top">PHOENIX SHOP</h1>
         <div class="headerPart1">
-            <img src="image/logo.jpg" alt="logo of phoenix shop" width="100" height="100">
-            <h1 id="Top">PHOENIX SHOP</h1>
-            <p>Welcome to Phoenix Shop. Instant Shopping, Get your products at your doorstep.</p>
             <form method="POST">
-                <table>
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="search products...">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="submit">Search</button>
-                        </td>
-                    </tr>
-                </table>
+                <input type="text" placeholder="search products...">
+                <button type="submit">Search</button>
             </form>
         </div>
-        <div class="headerPart2">
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Categories</li>
-                    <li>Help & Support</li>
-                    <li>Sign Up</li>
-                    <li>Log in</li>
-                    <li>My Cart</li>
-                </ul>
-            </nav>
-        </div>
+        <div class="user-info" id="userInfo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="homeAndLiving.html">Home &amp; Living</a></li>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="seller.html">Sell on Phoenix</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
     </header>
     <hr>
     <section id="categories">
         <h3>Categories</h3>
         <div class="categoriesClass">
-            <a href="html/electronics.html" class="category"><img src="image/electronics.jpg" alt="electronics image"
+            <a href="html/../electronics.html" class="category"><img src="image/electronics.jpg" alt="electronics image"
                     width="200" height="200">
                 <p>Electronics</p>
             </a>
-            <a href="html/fashion.html" class="category"><img src="image/fashion.jpg" alt="fashion image" width="200"
+            <a href="html/../fashion.html" class="category"><img src="image/fashion.jpg" alt="fashion image" width="200"
                     height="200">
                 <p>Fashion</p>
             </a>
-            <a href="html/homeAndLiving.html" class="category"><img src="image/home&living.jpg" alt="home image"
+            <a href="html/../homeAndLiving.html" class="category"><img src="image/home&living.jpg" alt="home image"
                     width="200" height="200">
                 <p>Home & Living</p>
             </a>
-            <a href="html/beauty.html" class="category"><img src="image/beauty.jpg" alt="beauty care products image"
+            <a href="html/../beauty.html" class="category"><img src="image/beauty.jpg" alt="beauty care products image"
                     width="200" height="200">
                 <p>Beauty & Personal Care</p>
             </a>
-            <a href="html/sports.html" class="category"><img src="image/sports&outdoors.jpg"
+            <a href="html/../sports.html" class="category"><img src="image/sports&outdoors.jpg"
                     alt="sports and outdoor image" width="200" height="200">
                 <p>Sports & Outdoors</p>
             </a>
@@ -71,9 +61,9 @@
     <hr>
     <section id="personalizedRecommendation">
         <h2>See Personalized recommendation</h2>
-        <a href="html/login.html"><button type="button">Log in</button></a>
+        <a href="html/../login.html"><button type="button">Log in</button></a>
         <h4>new customer?</h4>
-        <a href="html/signup.html">signup</a>
+        <a href="html/../signup.html">signup</a>
     </section>
     <hr>
     <div id="backtotop">
@@ -97,6 +87,7 @@
             <p>&copy; 2026 Phoenix Shop. All rights reserved.</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

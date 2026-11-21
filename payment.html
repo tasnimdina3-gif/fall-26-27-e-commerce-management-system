@@ -5,32 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <header class="header" id="Top">
+        <img src="image/logo.jpg" alt="Phoenix Shop" width="60" height="60">
+        <h1 id="Top">PHOENIX SHOP</h1>
+        <div class="headerPart1">
+            <form method="POST">
+                <input type="text" placeholder="search products...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="user-info" id="userInfo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="homeAndLiving.html">Home &amp; Living</a></li>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="seller.html">Sell on Phoenix</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="paymentSelectionBox">
         <h2>Select a payment method</h2>
         <label class="paymentOption" for="visa">
             <input type="radio" id="visa" name="payment" value="visa">
-            <img src="../image/visa.png" alt="visa image" width="100" height="100">
+            <img src="image/visa.png" alt="visa image" width="100" height="100">
             <span>Visa</span>
         </label>
 
         <label class="paymentOption" for="mastercard">
             <input type="radio" id="mastercard" name="payment" value="mastercard">
-            <img src="../image/mastercard.png" alt="mastercard image" width="100" height="100">
+            <img src="image/mastercard.png" alt="mastercard image" width="100" height="100">
             <span>Mastercard</span>
         </label>
 
         <label class="paymentOption" for="Bkash">
             <input type="radio" id="Bkash" name="payment" value="Bkash">
-            <img src="../image/bkash.png" alt="Bkash image" width="100" height="100">
+            <img src="image/bkash.png" alt="Bkash image" width="100" height="100">
             <span>Bkash</span>
         </label>
 
         <label class="paymentOption" for="Nagad">
             <input type="radio" id="Nagad" name="payment" value="Nagad">
-            <img src="../image/nagad.png" alt="Nagad image" width="100" height="100">
+            <img src="image/nagad.png" alt="Nagad image" width="100" height="100">
             <span>Nagad</span>
         </label>
     </div>
@@ -170,6 +194,7 @@
             </form>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
